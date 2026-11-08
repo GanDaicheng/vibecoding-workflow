@@ -39,7 +39,13 @@ flowchart LR
 
 ## 安装与调用
 
-将仓库中的 `vibecoding-workflow` 文件夹复制到 Codex 个人 Skill 目录。Windows PowerShell 示例：
+推荐用 `npx` 安装到 Codex 个人 Skill 目录（需要 Node.js 22.20 或更新版本）：
+
+```bash
+npx skills add GanDaicheng/vibecoding-workflow --skill vibecoding-workflow --agent codex --global --yes
+```
+
+只在当前项目使用时，去掉 `--global`。也可以手动将仓库中的 `vibecoding-workflow` 文件夹复制到个人目录。Windows PowerShell 示例：
 
 ```powershell
 git clone https://github.com/GanDaicheng/vibecoding-workflow.git
