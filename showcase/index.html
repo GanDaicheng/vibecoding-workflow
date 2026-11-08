@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="网站样本册，收集并展示通过 Vibe Coding 工作流制作的网站作品。"
+    />
+    <meta name="theme-color" content="#e9edf5" />
+    <title>网站样本册 — 把做出来的网站留在这里</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script defer src="src/projects.js"></script>
+    <script defer src="src/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#works">跳到作品目录</a>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="网站样本册，返回顶部">
+        <span class="brand__mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span class="brand__name">网站样本册</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#works">作品目录</a>
+        <a href="#about">关于本册</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> PERSONAL WEB ARCHIVE</p>
+          <h1 id="hero-title">把做出来的<br /><span>网站，留在这里。</span></h1>
+          <p class="hero__description">
+            一个持续更新的网站作品集。每个入口，都是一个被实现出来的想法。
+          </p>
+          <a class="hero__link" href="#works">
+            浏览作品 <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-art__orbit hero-art__orbit--outer"></div>
+          <div class="hero-art__orbit hero-art__orbit--inner"></div>
+          <div class="browser-stack browser-stack--back">
+            <div class="browser-stack__bar"><i></i><i></i><i></i></div>
+            <div class="browser-stack__body"><span></span><span></span></div>
+          </div>
+          <div class="browser-stack browser-stack--front">
+            <div class="browser-stack__bar"><i></i><i></i><i></i><b>NEW WINDOW</b></div>
+            <div class="browser-stack__body">
+              <strong>your next<br />good idea</strong>
+              <span class="browser-stack__accent"></span>
+            </div>
+          </div>
+          <span class="hero-art__index">COLLECTION / 001</span>
+          <span class="hero-art__spark" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="works" id="works" aria-labelledby="works-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow--blue">THE COLLECTION</p>
+            <h2 id="works-title">作品目录<span class="section-heading__period">.</span></h2>
+          </div>
+          <p class="project-count" id="project-count" role="status" aria-live="polite">共 0 个作品</p>
+        </div>
+
+        <div class="filter-row">
+          <p class="filter-row__label">按类别浏览</p>
+          <div class="filters" id="category-filters" aria-label="作品类别"></div>
+        </div>
+
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <div class="empty-state__window" aria-hidden="true">
+            <div class="empty-state__bar"><i></i><i></i><i></i></div>
+            <div class="empty-state__canvas"><span>+</span></div>
+          </div>
+          <div class="empty-state__copy">
+            <p class="eyebrow eyebrow--blue">A SPACE FOR WHAT'S NEXT</p>
+            <h3>第一件作品，<br />等你放进来。</h3>
+            <p>这里暂时还是空白。做完一个网站，就把它收进这本样本册。</p>
+          </div>
+        </div>
+
+        <p class="no-results" id="no-results" hidden>这个类别还没有作品，试试浏览全部。</p>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about__stamp" aria-hidden="true">WEB<br />WORKS</div>
+        <div class="about__copy">
+          <p class="eyebrow">ABOUT THIS BOOK</p>
+          <h2 id="about-title">一个想法，<br />一个可以打开的地方。</h2>
+          <p>这里记录通过 Vibe Coding 工作流完成的网站。从小小的尝试开始，慢慢积累成一册。</p>
+        </div>
+        <details class="maintainer-note">
+          <summary>如何添加作品</summary>
+          <p>在项目文件夹中打开 <code>src/projects.js</code>，复制 README 里的作品记录示例，填入标题、类别、介绍和成品网址。保存后重新打开页面即可看到新作品。</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand--footer" href="#top">
+        <span class="brand__mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand__name">网站样本册</span>
+      </a>
+      <p>MADE ONE WEBSITE AT A TIME <span aria-hidden="true">✳</span></p>
+      <a href="#top" class="back-to-top">回到顶部 ↑</a>
+    </footer>
+  </body>
+</html>
