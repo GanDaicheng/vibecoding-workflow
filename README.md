@@ -136,10 +136,9 @@ $vibecoding-workflow 继续上次的项目。先读取项目记录和当前代�
 
 Skill 的入口是 [`vibecoding-workflow/SKILL.md`](vibecoding-workflow/SKILL.md)。当前版本不包含脚手架、固定技术栈或自动部署脚本。
 
-## 网站样本册示例
+## 网站与成品作品
 
-本仓库附带一个使用该工作流制作的静态作品集目录。源码位于 [`showcase/`](showcase/)；在本地直接打开 `showcase/index.html` 可预览，作品数据维护在 `showcase/src/projects.js`。
-
+本仓库提供中文介绍页和独立成品目录。合并到 `main` 后由 GitHub Actions 发布到 [Vibe Coding 工作流网站](https://gandaicheng.github.io/vibecoding-workflow/)。源码位于 [`showcase/`](showcase/)；本地可直接打开 `showcase/index.html`，也可通过任意静态文件服务器预览。作品数据维护在 [`showcase/src/projects.js`](showcase/src/projects.js)，首发为空，等待真实项目。
 ## 参考
 
 工作流设计参考了 [Superpowers](https://github.com/obra/superpowers)、[Get Shit Done](https://github.com/gsd-build/get-shit-done)、[GitHub Spec Kit](https://github.com/github/spec-kit) 和 [BMAD Method](https://github.com/bmad-code-org/BMAD-METHOD) 的公开思路，并针对小型 Web 项目重新组织。

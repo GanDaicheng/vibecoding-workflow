@@ -3,115 +3,130 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="网站样本册，收集并展示通过 Vibe Coding 工作流制作的网站作品。"
-    />
+    <meta name="description" content="Vibe Coding 工作流是一个面向编程新手的 Codex Skill，帮助你从想法走到可检查的网站成品。" />
     <meta name="theme-color" content="#e9edf5" />
-    <title>网站样本册 — 把做出来的网站留在这里</title>
+    <title>Vibe Coding 工作流 — 从想法到可验证的网站</title>
     <link rel="stylesheet" href="src/styles.css" />
-    <script defer src="src/projects.js"></script>
-    <script defer src="src/app.js"></script>
+    <script defer src="src/landing.js"></script>
   </head>
-  <body>
-    <a class="skip-link" href="#works">跳到作品目录</a>
+  <body class="page-home">
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
 
     <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="网站样本册，返回顶部">
-        <span class="brand__mark" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </span>
-        <span class="brand__name">网站样本册</span>
+      <a class="brand" href="index.html" aria-label="Vibe Coding 工作流首页">
+        <span class="brand__mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand__name">Vibe Coding 工作流</span>
       </a>
       <nav class="site-nav" aria-label="主导航">
-        <a href="#works">作品目录</a>
-        <a href="#about">关于本册</a>
+        <a href="#how-it-works">工作方式</a>
+        <a href="works.html">成品作品</a>
+        <a class="site-nav__cta" href="#install">开始安装 <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero" aria-labelledby="hero-title">
+    <main id="main-content">
+      <section class="hero landing-hero" aria-labelledby="hero-title">
         <div class="hero__copy">
-          <p class="eyebrow"><span class="eyebrow__dot"></span> PERSONAL WEB ARCHIVE</p>
-          <h1 id="hero-title">把做出来的<br /><span>网站，留在这里。</span></h1>
-          <p class="hero__description">
-            一个持续更新的网站作品集。每个入口，都是一个被实现出来的想法。
-          </p>
-          <a class="hero__link" href="#works">
-            浏览作品 <span aria-hidden="true">↓</span>
-          </a>
+          <p class="eyebrow"><span class="eyebrow__dot"></span> A CODEX SKILL FOR SMALL WEB PROJECTS</p>
+          <h1 id="hero-title">从一个想法，<br /><span>走到可验证的网站。</span></h1>
+          <p class="hero__description">面向编程新手的 Vibe Coding 工作流。先把要做的事说清楚，再一步步完成、检查和交付一个小型 Web 项目。</p>
+          <div class="landing-hero__actions">
+            <a class="hero__link hero__link--primary" href="#install">开始安装 <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="works.html">看看它做出的作品 <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="landing-hero__note">不要求先选框架，也不把想法直接变成一堆代码。</p>
         </div>
-
         <div class="hero-art" aria-hidden="true">
           <div class="hero-art__orbit hero-art__orbit--outer"></div>
           <div class="hero-art__orbit hero-art__orbit--inner"></div>
-          <div class="browser-stack browser-stack--back">
-            <div class="browser-stack__bar"><i></i><i></i><i></i></div>
-            <div class="browser-stack__body"><span></span><span></span></div>
-          </div>
+          <div class="browser-stack browser-stack--back"><div class="browser-stack__bar"><i></i><i></i><i></i></div><div class="browser-stack__body"><span></span><span></span></div></div>
           <div class="browser-stack browser-stack--front">
-            <div class="browser-stack__bar"><i></i><i></i><i></i><b>NEW WINDOW</b></div>
-            <div class="browser-stack__body">
-              <strong>your next<br />good idea</strong>
-              <span class="browser-stack__accent"></span>
-            </div>
+            <div class="browser-stack__bar"><i></i><i></i><i></i><b>PROJECT / READY</b></div>
+            <div class="browser-stack__body"><strong>idea<br />→ website</strong><span class="browser-stack__accent"></span></div>
           </div>
-          <span class="hero-art__index">COLLECTION / 001</span>
+          <span class="hero-art__index">PLAN · BUILD · VERIFY</span>
           <span class="hero-art__spark" aria-hidden="true">✳</span>
         </div>
       </section>
 
-      <section class="works" id="works" aria-labelledby="works-title">
-        <div class="section-heading">
+      <section class="workflow-section" id="how-it-works" aria-labelledby="workflow-title">
+        <div class="section-heading section-heading--wide">
           <div>
-            <p class="eyebrow eyebrow--blue">THE COLLECTION</p>
-            <h2 id="works-title">作品目录<span class="section-heading__period">.</span></h2>
+            <p class="eyebrow eyebrow--blue">A CLEAR WAY TO BUILD</p>
+            <h2 id="workflow-title">先理清路线，<br />再把每一步走完<span class="section-heading__period">.</span></h2>
           </div>
-          <p class="project-count" id="project-count" role="status" aria-live="polite">共 0 个作品</p>
+          <p class="section-heading__intro">Skill 会把大任务拆成看得见、能检查的小步。重要决定由你确认，普通实现细节由 Codex 处理。</p>
         </div>
-
-        <div class="filter-row">
-          <p class="filter-row__label">按类别浏览</p>
-          <div class="filters" id="category-filters" aria-label="作品类别"></div>
+        <div class="workflow-grid">
+          <article class="workflow-card">
+            <span class="workflow-card__index">01 / CLARIFY</span>
+            <h3>先说清要做什么</h3>
+            <p>区分小改动、新项目和多步骤功能，确认目标用户、交付终点和首版范围。</p>
+            <span class="workflow-card__mark" aria-hidden="true">?</span>
+          </article>
+          <article class="workflow-card">
+            <span class="workflow-card__index">02 / PLAN</span>
+            <h3>再决定怎么实现</h3>
+            <p>按需求选技术，判断是否需要数据库，并把核心故事对应到页面、开发切片和验收方式。</p>
+            <span class="workflow-card__mark workflow-card__mark--lime" aria-hidden="true">↗</span>
+          </article>
+          <article class="workflow-card">
+            <span class="workflow-card__index">03 / BUILD</span>
+            <h3>完成后实际检查</h3>
+            <p>按切片开发，运行相关检查或手动验收；结果不符合时继续修复，并记录当前进度。</p>
+            <span class="workflow-card__mark workflow-card__mark--blue" aria-hidden="true">✓</span>
+          </article>
         </div>
-
-        <div class="project-grid" id="project-grid" aria-live="polite"></div>
-
-        <div class="empty-state" id="empty-state" hidden>
-          <div class="empty-state__window" aria-hidden="true">
-            <div class="empty-state__bar"><i></i><i></i><i></i></div>
-            <div class="empty-state__canvas"><span>+</span></div>
-          </div>
-          <div class="empty-state__copy">
-            <p class="eyebrow eyebrow--blue">A SPACE FOR WHAT'S NEXT</p>
-            <h3>第一件作品，<br />等你放进来。</h3>
-            <p>这里暂时还是空白。做完一个网站，就把它收进这本样本册。</p>
-          </div>
-        </div>
-
-        <p class="no-results" id="no-results" hidden>这个类别还没有作品，试试浏览全部。</p>
       </section>
 
-      <section class="about" id="about" aria-labelledby="about-title">
-        <div class="about__stamp" aria-hidden="true">WEB<br />WORKS</div>
-        <div class="about__copy">
-          <p class="eyebrow">ABOUT THIS BOOK</p>
-          <h2 id="about-title">一个想法，<br />一个可以打开的地方。</h2>
-          <p>这里记录通过 Vibe Coding 工作流完成的网站。从小小的尝试开始，慢慢积累成一册。</p>
+      <section class="fit-section" aria-labelledby="fit-title">
+        <div class="fit-section__visual" aria-hidden="true">
+          <div class="fit-card fit-card--one"><span>PUBLIC PAGE</span><strong>Small<br />and clear.</strong><i></i></div>
+          <div class="fit-card fit-card--two"><span>CHECKPOINT</span><strong>Is it<br />working?</strong><i></i></div>
+          <span class="fit-section__stamp">NO<br />GUESSING</span>
         </div>
-        <details class="maintainer-note">
-          <summary>如何添加作品</summary>
-          <p>在项目文件夹中打开 <code>src/projects.js</code>，复制 README 里的作品记录示例，填入标题、类别、介绍和成品网址。保存后重新打开页面即可看到新作品。</p>
-        </details>
+        <div class="fit-section__copy">
+          <p class="eyebrow eyebrow--blue">MADE FOR A PRACTICAL FIRST VERSION</p>
+          <h2 id="fit-title">适合从小型网站开始，<br />不把复杂需求藏起来。</h2>
+          <p>首版重点是公开展示页面。登录、管理后台、上传、支付或敏感数据会增加权限和数据设计；遇到这些需求，工作流会先停下来重新确认范围。</p>
+          <a class="text-link" href="https://github.com/GanDaicheng/vibecoding-workflow/blob/main/vibecoding-workflow/SKILL.md">阅读完整工作流 <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="install-section" id="install" aria-labelledby="install-title">
+        <div class="install-section__intro">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> READY WHEN YOU ARE</p>
+          <h2 id="install-title">把工作流装进 Codex。</h2>
+          <p>需要 Node.js 22.20 或更新版本。复制命令，在终端运行；安装后就能用自然语言开始描述你的项目。</p>
+        </div>
+        <div class="install-panel">
+          <div class="install-panel__label"><span>CODEX · GLOBAL INSTALL</span><span class="install-panel__language">SHELL</span></div>
+          <div class="install-command-row">
+            <code id="install-command">npx skills add GanDaicheng/vibecoding-workflow --skill vibecoding-workflow --agent codex --global --yes</code>
+            <button class="copy-button" id="copy-install" type="button" aria-label="复制安装命令">复制命令</button>
+          </div>
+          <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+          <div class="install-panel__prompt">
+            <span>安装后可以这样开始</span>
+            <code>$vibecoding-workflow 我想做一个公开的网站，先带我确定首版范围。</code>
+          </div>
+        </div>
+        <div class="install-section__footer">
+          <a href="https://github.com/GanDaicheng/vibecoding-workflow#安装与调用">查看安装说明与常见调用 <span aria-hidden="true">↗</span></a>
+          <a href="works.html">浏览用它做出的作品 <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="repo-links" aria-label="项目资源">
+        <a href="https://github.com/GanDaicheng/vibecoding-workflow">GitHub 仓库 <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/GanDaicheng/vibecoding-workflow/blob/main/README.md">完整项目说明 <span aria-hidden="true">↗</span></a>
+        <a href="works.html">成品作品集 <span aria-hidden="true">→</span></a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <a class="brand brand--footer" href="#top">
-        <span class="brand__mark" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span class="brand__name">网站样本册</span>
-      </a>
-      <p>MADE ONE WEBSITE AT A TIME <span aria-hidden="true">✳</span></p>
+      <a class="brand brand--footer" href="index.html"><span class="brand__mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand__name">Vibe Coding 工作流</span></a>
+      <p>从一个想法，到一个可以打开的地方。 <span aria-hidden="true">✳</span></p>
       <a href="#top" class="back-to-top">回到顶部 ↑</a>
     </footer>
   </body>

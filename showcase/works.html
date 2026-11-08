@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="浏览使用 Vibe Coding 工作流完成的网站作品。" />
+    <meta name="theme-color" content="#e9edf5" />
+    <title>成品作品 — Vibe Coding 工作流</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script defer src="src/projects.js"></script>
+    <script defer src="src/app.js"></script>
+  </head>
+  <body class="page-works">
+    <a class="skip-link" href="#works">跳到作品目录</a>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="index.html" aria-label="Vibe Coding 工作流首页"><span class="brand__mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand__name">Vibe Coding 工作流</span></a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html#how-it-works">工作方式</a>
+        <a href="works.html" aria-current="page">成品作品</a>
+        <a class="site-nav__cta" href="index.html#install">开始安装 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero works-hero" aria-labelledby="works-hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__dot"></span> PROJECTS MADE WITH THE WORKFLOW</p>
+          <h1 id="works-hero-title">一个想法，<br /><span>一个可以打开的地方。</span></h1>
+          <p class="hero__description">这里收录通过 Vibe Coding 工作流完成的网站。每个项目都是一次从需求到结果的真实练习。</p>
+          <a class="hero__link" href="#works">浏览作品 <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-art__orbit hero-art__orbit--outer"></div>
+          <div class="hero-art__orbit hero-art__orbit--inner"></div>
+          <div class="browser-stack browser-stack--back"><div class="browser-stack__bar"><i></i><i></i><i></i></div><div class="browser-stack__body"><span></span><span></span></div></div>
+          <div class="browser-stack browser-stack--front">
+            <div class="browser-stack__bar"><i></i><i></i><i></i><b>PROJECT / ARCHIVE</b></div>
+            <div class="browser-stack__body"><strong>made<br />to work</strong><span class="browser-stack__accent"></span></div>
+          </div>
+          <span class="hero-art__index">THE WORKS COLLECTION</span>
+          <span class="hero-art__spark" aria-hidden="true">✳</span>
+        </div>
+      </section>
+
+      <section class="works" id="works" aria-labelledby="works-title">
+        <div class="section-heading">
+          <div><p class="eyebrow eyebrow--blue">THE COLLECTION</p><h2 id="works-title">作品目录<span class="section-heading__period">.</span></h2></div>
+          <p class="project-count" id="project-count" role="status" aria-live="polite">共 0 个作品</p>
+        </div>
+        <div class="filter-row">
+          <p class="filter-row__label">按类别浏览</p>
+          <div class="filters" id="category-filters" aria-label="作品类别"></div>
+        </div>
+        <div class="project-grid" id="project-grid" aria-live="polite"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <div class="empty-state__window" aria-hidden="true"><div class="empty-state__bar"><i></i><i></i><i></i></div><div class="empty-state__canvas"><span>+</span></div></div>
+          <div class="empty-state__copy">
+            <p class="eyebrow eyebrow--blue">A SPACE FOR WHAT'S NEXT</p>
+            <h3>作品正在加入，<br />下一个入口留给你。</h3>
+            <p>这里暂时还是空白。新作品上线后会收录在这里，先看看工作流如何一步步完成一个网站。</p>
+            <a class="text-link" href="index.html#how-it-works">了解工作方式 <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <p class="no-results" id="no-results" hidden>这个类别还没有作品，试试浏览全部。</p>
+      </section>
+
+      <section class="works-callout" aria-labelledby="works-callout-title">
+        <div><p class="eyebrow">START WITH YOUR IDEA</p><h2 id="works-callout-title">准备好做一个自己的项目了吗？</h2></div>
+        <a class="hero__link hero__link--primary" href="index.html#install">安装工作流 <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand--footer" href="index.html"><span class="brand__mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand__name">Vibe Coding 工作流</span></a>
+      <p>MADE ONE WEBSITE AT A TIME <span aria-hidden="true">✳</span></p>
+      <a href="#top" class="back-to-top">回到顶部 ↑</a>
+    </footer>
+  </body>
+</html>

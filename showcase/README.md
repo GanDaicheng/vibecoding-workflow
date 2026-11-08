@@ -1,14 +1,14 @@
-# 网站样本册
+# Vibe Coding 工作流网站
 
-一个用来收集和展示网站成品的静态作品集目录。
+静态中文介绍站与成品作品目录。无需安装依赖或构建；仓库工作流会将 `showcase/` 发布到 GitHub Pages。
 
 ## 本地打开
 
-直接在文件管理器中双击项目根目录的 `index.html`，浏览器会打开首页。首版没有安装依赖或构建步骤。
+直接双击 `index.html` 可查看 Skill 介绍页，双击 `works.html` 可查看作品目录。复制按钮在安全上下文中使用 Clipboard API；本地文件协议下若浏览器限制剪贴板，可手动复制显示的命令。也可用本地静态服务器预览，例如 `npx serve showcase`。
 
 ## 添加一个作品
 
-编辑 `src/projects.js`，把 `window.PORTFOLIO_PROJECTS = [];` 换成下面这样的数组。将成品地址填进 `url`，可选封面放在 `assets/covers/` 中。
+编辑 `src/projects.js`，把 `window.PORTFOLIO_PROJECTS = [];` 换成下面这样的数组。将成品地址填进 `url`，可选封面放在 `assets/covers/` 中。首发保持空数组，不用占位案例。
 
 ```js
 window.PORTFOLIO_PROJECTS = [
@@ -35,11 +35,21 @@ window.PORTFOLIO_PROJECTS = [
 - `cover`：相对于项目根目录的图片路径，例如 `assets/covers/example.webp`。没有封面时会显示样本册的图形封面。
 - `year`：作品年份。
 
-保存后刷新页面即可看到更新。部署后更新数据文件并重新部署，访客就能看到新作品。
+保存后刷新 `works.html` 即可看到更新。新增真实作品时，将封面放在 `assets/covers/` 并使用相对路径；提交到 `main` 后 Pages 自动重新部署。
+
+## 页面
+
+- `index.html`：工作流介绍、安装命令和调用示例。
+- `works.html`：真实成品作品、分类筛选和空状态。
+- `src/landing.js`：安装命令复制交互。
+- `src/app.js`：作品卡片、类别筛选和空状态。
+- `src/projects.js`：作品数据源。
+
+正式网址：<https://gandaicheng.github.io/vibecoding-workflow/>（启用 Pages 并完成首次部署后可用）。
 
 ## 项目结构
 
-- `index.html`：页面内容和结构。
+- `index.html`、`works.html`：页面内容和结构。
 - `src/styles.css`：视觉样式与响应式布局。
 - `src/projects.js`：作品数据。
 - `src/app.js`：作品卡片、分类筛选和空状态。
